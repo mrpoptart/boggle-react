@@ -1,0 +1,43 @@
+.die {    
+    background-color: #ffeecc;
+    float: left;
+    text-align: center;
+    border-radius: 0.2em;
+}
+.die:nth-child(5n+1) {    
+    clear: left;
+}
+
+.letter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #222;
+}
+
+.lined:after {
+    content: '_';
+    position: absolute;
+}
+
+
+.wide .die {
+    margin: .5vh;
+    width: 19vh;
+    line-height: 19vh;
+    font-size: 14vh;
+}
+
+.wide .lined:after {
+    left: 6vh;
+}
+
+.tall .die {
+    margin: .5vw;
+    width: 19vw;
+    line-height: 19vw;
+    font-size: 14vw;
+}
+
+.tall .lined:after {
+    left: 6vw;
+}
